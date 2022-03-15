@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Barklaystudio.github.io/rsschool-cv/cv
