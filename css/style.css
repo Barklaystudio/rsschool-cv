@@ -1,0 +1,81 @@
+body{
+    width: 920px;
+    display: block;
+    margin: 0 auto;
+}
+
+.name{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+}
+.name_dicr{
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+}
+.name_discr__lastName{
+    display: flex;
+    justify-content:center;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.name_photo_img{
+    max-width: 150px;
+    border-radius: 10%;
+}
+h1{
+    color: rgba(2, 49, 2, 0.993);
+    margin: 0;
+    padding: 0;
+    }
+
+.email {
+    align-self: center;
+    color:#06631d;
+    margin-top: 10px;
+}
+.email_img, .phone_img{
+    width: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.phone{
+    color:rgb(247, 4, 166);
+    padding: 10px;
+    align-self: center;
+}
+.brief {
+    margin-bottom: 20px;
+}
+.tooltip {
+	border-bottom: 1px dotted #0077AA;
+	visibility: visible;
+    margin: 0 0 20px 40px;
+    font-weight: 700;
+    color:rgba(2, 49, 2, 0.993);
+   }
+    
+.tooltip::after {
+	background: rgb(6, 54, 25);
+	border-radius: 8px 8px 8px 0px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: rgb(253, 247, 247);
+	content: attr(data-tooltip); 
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden; 
+	font-size: 18px;
+	transition: all 0.5s ease-in-out; 
+}
+		
+.tooltip:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
